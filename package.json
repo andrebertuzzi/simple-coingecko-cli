@@ -1,0 +1,21 @@
+{
+  "name": "simple-coingecko-cli",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "coin": "coin.js",
+    "top-crypto": "top-crypto.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm version patch&&npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coingecko-api": "^1.0.10",
+    "json-to-table": "^4.2.1"
+  }
+}
