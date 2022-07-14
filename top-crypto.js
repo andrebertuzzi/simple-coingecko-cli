@@ -13,18 +13,20 @@ const top = args.splice(2, args.length).join(' ')
 const main = async () => {
   const data = await CoinGeckoClient.coins.markets()
 
+
+  console.log(data)
   const result = data.data.map((a) => {
     return {
       name: a.name,
       symbol: a.symbol,
       price: formatterCurrency.format(a.current_price),
+      '24h_change': a.price_change_percentage_24h,
       volume: formatterNumber.format(a.total_volume),
       ath: a.ath,
       ath_date: a.ath_date,
     }
   })
   console.table(result.slice(0, top))
-  // console.log(kdata)
 }
 
 main()
