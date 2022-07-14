@@ -2,7 +2,7 @@
 npm i --global simple-coingecko-cli
 
 # Get coin info
-$ coin bitcoin 5
+$ coin bitcoin
 ┌─────────┬───────┬────────┬───────────┬────────────────┬───────────────────┐
 │ (index) │ base  │ target │  market   │      last      │      volume       │
 ├─────────┼───────┼────────┼───────────┼────────────────┼───────────────────┤
